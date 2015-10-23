@@ -1,10 +1,3 @@
-/*
- * moand.hpp
- *
- *  Created on: Oct 31, 2013
- *      Author: Mo
- */
-
 #ifndef MONAD_HPP_
 #define MONAD_HPP_
 #include <cstddef>
