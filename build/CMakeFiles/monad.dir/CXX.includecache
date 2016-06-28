@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mo/Projects/cxxmonad/src/main.cpp
+iostream
+-
+vector
+-
+forward_list
+-
+monad.hpp
+/home/mo/Projects/cxxmonad/src/monad.hpp
+
+/home/mo/Projects/cxxmonad/src/monad.hpp
+cstddef
+-
+
