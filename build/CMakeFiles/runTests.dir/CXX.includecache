@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/maybe.hpp
+functional
+-
+
+/home/mo/Projects/cxxmonad/test/test.cpp
+gtest/gtest.h
+-
+maybe.hpp
+/home/mo/Projects/cxxmonad/test/maybe.hpp
+

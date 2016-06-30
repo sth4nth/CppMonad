@@ -1,3 +1,4 @@
 /home/mo/Projects/cxxmonad/build/CMakeFiles/edit_cache.dir
 /home/mo/Projects/cxxmonad/build/CMakeFiles/rebuild_cache.dir
 /home/mo/Projects/cxxmonad/build/CMakeFiles/monad.dir
+/home/mo/Projects/cxxmonad/build/CMakeFiles/runTests.dir
