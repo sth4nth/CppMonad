@@ -1,19 +1,47 @@
-#include <functional>
+#pragma once
+#include <iostream>
+
 // Maybe monad
+
 template<typename T>
-struct Maybe {
-  T _just;
-  bool _nothing;
-  // unit (return)
-  Maybe() : _nothing(true) {}
-  Maybe(T t) : _just(t), _nothing(false) {}
+class Maybe;
+
+template<typename T>
+Maybe<T> maybe(T const& x);
+
+Maybe<void> maybe();
+
+template<typename T>
+class Maybe{
+
+public:
+  T const& _x;
+  Maybe(T const& x) : _x(x) {}
   // bind
-  template<typename R>
-  Maybe<R> bind(std::function<Maybe<R>(T)> f) const {
-    return _nothing ? Maybe<R>() : Maybe<R>(f(_just));
+  template<typename F>
+  auto bind(F f) {
+    return f(_x);
   }
 };
 
-void foo(std::function<int(int)> f){
-	
+template<>
+class Maybe<void> {
+public:
+	Maybe() {}
+
+	template<typename F>
+	auto bind(F f){
+		return maybe();
+	}
+};
+
+template<typename T>
+Maybe<T> maybe(T const& x) {
+	return Maybe<T>(x);
 }
+
+Maybe<void> maybe() {
+	 return Maybe<void>();
+}
+
+

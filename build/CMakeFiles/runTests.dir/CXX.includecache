@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 ../include/maybe.hpp
-functional
--
 
 /home/mo/Projects/cxxmonad/test/test.cpp
 gtest/gtest.h

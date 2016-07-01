@@ -6,12 +6,8 @@
 
 #IncludeRegexTransform: 
 
-../include/expression.hpp
-cstddef
--
-
-../include/monad.hpp
-functional
+../include/maybe.hpp
+stream
 -
 
 /home/mo/Projects/cxxmonad/src/main.cpp
@@ -21,8 +17,8 @@ vector
 -
 forward_list
 -
-expression.hpp
-/home/mo/Projects/cxxmonad/src/expression.hpp
-monad.hpp
-/home/mo/Projects/cxxmonad/src/monad.hpp
+memory
+-
+maybe.hpp
+/home/mo/Projects/cxxmonad/src/maybe.hpp
 
