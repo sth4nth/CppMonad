@@ -1,5 +1,5 @@
-#ifndef MONAD_HPP_
-#define MONAD_HPP_
+#pragma once
+
 #include <cstddef>
 using std::size_t;
 
@@ -104,4 +104,4 @@ public:
 	}
 };
 
-#endif /* MONAD_HPP_ */
+

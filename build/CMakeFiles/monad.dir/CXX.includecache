@@ -7,7 +7,7 @@
 #IncludeRegexTransform: 
 
 ../include/maybe.hpp
-stream
+iostream
 -
 
 /home/mo/Projects/cxxmonad/src/main.cpp

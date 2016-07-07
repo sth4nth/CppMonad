@@ -1,1 +1,1 @@
-/usr/bin/c++   -fconcepts -pthread   CMakeFiles/monad.dir/src/main.cpp.o  -o monad -rdynamic 
+/usr/bin/c++   -std=c++1z -pthread   CMakeFiles/monad.dir/src/main.cpp.o  -o monad -rdynamic 

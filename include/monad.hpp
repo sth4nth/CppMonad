@@ -1,5 +1,6 @@
-#include <functional>
+#pragma once
 
+#include <functional>
 
 template<typename T>
 struct Monad {
@@ -11,10 +12,10 @@ struct Monad {
 };
 
 template<typename T>
-Monad<T> _return(T v);
+Monad<T> uint(T v);
 
 template<typename To, typename From>
-Monad<To> _bind(Monad<From> m, std::function<Monad<To>(From)> f);
+Monad<To> bind(Monad<From> m, std::function<Monad<To>(From)> f);
 
 // Maybe monad
 template<typename T>
@@ -29,8 +30,6 @@ struct Maybe {
     return _p ? Maybe<R>(f(*_p)) : Maybe<R>();
   }
 };
-
-
 
 
 template<typename T>

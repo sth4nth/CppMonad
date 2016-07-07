@@ -1,1 +1,1 @@
-/usr/bin/c++   -fconcepts -pthread   CMakeFiles/runTests.dir/test/test.cpp.o  -o runTests -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 
+/usr/bin/c++   -std=c++1z -pthread   CMakeFiles/runTests.dir/test/test.cpp.o  -o runTests -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 
