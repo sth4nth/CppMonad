@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/expression.hpp
+cstddef
+-
+
 ../include/maybe.hpp
 iostream
 -
@@ -19,6 +23,8 @@ forward_list
 -
 memory
 -
+expression.hpp
+/home/mo/Projects/cxxmonad/src/expression.hpp
 maybe.hpp
 /home/mo/Projects/cxxmonad/src/maybe.hpp
 

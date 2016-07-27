@@ -2,7 +2,7 @@
 #include <vector>
 #include <forward_list>
 #include <memory>
-// #include "expression.hpp"
+#include "expression.hpp"
 // #include "monad.hpp"
 #include "maybe.hpp"
 
@@ -76,9 +76,9 @@ Func<Args...> make_func(Func<Args...> f) {
 
 int main() {
 
-	auto b = maybe(1)
-	.bind([](auto x) {return maybe(x+1.1);})
-	.bind([](auto x) {return maybe();});
+	// auto b = maybe(1)
+	// .bind([](auto x) {return maybe(x+1.1);})
+	// .bind([](auto x) {return maybe();});
 	// std::cout << b._x << std::endl;
 
 
@@ -90,10 +90,10 @@ int main() {
 	// f = []() { std::cout << "lambda" << std::endl; };
 	// f();
 
-	// using namespace std;
-	// vector<double> args({2.0, 3.0, 4.0});
-	// Compile<Negative<Plus<Arg0, Plus<Arg1, Arg2>>>> act;
-	// auto v = act(args);
-	// cout << v << endl;
+	using namespace std;
+	vector<double> args({2.0, 3.0, 4.0});
+	Compile<Negative<Plus<Arg0, Plus<Arg1, Arg2>>>> act;
+	auto v = act(args);
+	cout << v << endl;
 	return 0;
 }

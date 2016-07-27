@@ -53,11 +53,19 @@ Bind<Func, Cont> bind(Func func, Cont cont) {
 	return Bind<Func, Cont>(func, cont);
 }
 
+template<typename Func, typename Cont>
+Bind<Func, Cont> operator|( Func func, Cont cont) {
+	return Bind<Func, Cont>(func, cont);
+}
+
 template<typename E>
 class Negative {};
 
 template<typename E0, typename E1>
 class Plus {};
+
+template<typename E0, typename E1>
+class Minus {};
 
 template<typename E>
 class Compile;

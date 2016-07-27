@@ -1,0 +1,7 @@
+
+
+class Continuation {
+public:
+	
+
+};
